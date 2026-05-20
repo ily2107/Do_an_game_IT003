@@ -316,7 +316,7 @@ class TouhouPlayer:
     def __init__(self):
         self.image = pygame.image.load("assets/ChatGPT Image May 12, 2026, 05_43_05 PM.png").convert_alpha()
         self.image.set_colorkey((0, 0, 0))
-        self.image = pygame.transform.scale(self.image, (72, 72))
+        self.image = pygame.transform.scale(self.image, (50, 50))
 
         self.rect = self.image.get_rect()
         self.rect.center = (WIDTH // 2, HEIGHT - 100)
@@ -377,8 +377,6 @@ class TouhouPlayer:
 
     def draw(self, screen):
         screen.blit(self.image, self.rect)
-
-        pygame.draw.circle(screen, (255, 60, 60), self.rect.center, self.hitbox_radius, 2)
 
 
 class Enemy:
