@@ -1,4 +1,3 @@
-#Created by Vu Thi Thu Huong
 import pygame
 import random
 from setting import *
@@ -18,7 +17,7 @@ class Game:
         self.clock = pygame.time.Clock()
         
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
-        pygame.display.set_caption("Flappy_bird")
+        pygame.display.set_caption("Super bird")
 
         icon, self.background, floor_img = load_assets()
         pygame.display.set_icon(icon)
